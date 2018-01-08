@@ -63,7 +63,7 @@
 // Defines and structures
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 #define kDCC_INTERRUPT            0  // INT0 = Pin 2
-#define NUM_ADDRESSES               4  // Number of addresses to decode
+#define NUM_ADDRESSES             4  // Number of addresses to decode
 
 typedef struct
 {
@@ -95,7 +95,6 @@ AirDcc   Modem(enablePin) ; // Instantiate modem
 void ConfigureDecoder()
 {
     gAddresses[0].address =     1;
-    gAddresses[0].state =       0;
     gAddresses[0].offPin =      18;
     gAddresses[0].onPin =       19;
     gAddresses[0].servoPin =    14;
@@ -103,7 +102,6 @@ void ConfigureDecoder()
     gAddresses[0].servoOnPos =  90;
 
     gAddresses[1].address =     2;
-    gAddresses[1].state =       0;
     gAddresses[1].offPin =      3;
     gAddresses[1].onPin =       4;
     gAddresses[1].servoPin =    15;
@@ -111,7 +109,6 @@ void ConfigureDecoder()
     gAddresses[1].servoOnPos =  90;
 
     gAddresses[2].address =     3;
-    gAddresses[2].state =       0;
     gAddresses[2].offPin =      5;
     gAddresses[2].onPin =       6;
     gAddresses[2].servoPin =    16;
@@ -119,7 +116,6 @@ void ConfigureDecoder()
     gAddresses[2].servoOnPos =  90;
 
     gAddresses[3].address =     4;
-    gAddresses[3].state =       0;
     gAddresses[3].offPin =      8;
     gAddresses[3].onPin =       9;
     gAddresses[3].servoPin =    17;
