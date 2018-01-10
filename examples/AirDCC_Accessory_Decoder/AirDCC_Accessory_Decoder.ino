@@ -80,7 +80,7 @@ DCCAccessoryAddress gAddresses[NUM_ADDRESSES];  //number of addresses below
 
 Servo servo[NUM_ADDRESSES];  // Create servo instances
 
-int timer;  // Timer value for modem keepAlive
+unsigned long timer;  // Timer value for modem keepAlive
 
 // Setup RF modem
 const int enablePin = 10;   // Slave enable line for CC1101
@@ -98,29 +98,29 @@ void ConfigureDecoder()
     gAddresses[0].offPin =      18;
     gAddresses[0].onPin =       19;
     gAddresses[0].servoPin =    14;
-    gAddresses[0].servoOffPos = 0;
-    gAddresses[0].servoOnPos =  90;
+    gAddresses[0].servoOffPos = 45;
+    gAddresses[0].servoOnPos =  135;
 
     gAddresses[1].address =     2;
     gAddresses[1].offPin =      3;
     gAddresses[1].onPin =       4;
     gAddresses[1].servoPin =    15;
-    gAddresses[1].servoOffPos = 0;
-    gAddresses[1].servoOnPos =  90;
+    gAddresses[1].servoOffPos = 45;
+    gAddresses[1].servoOnPos =  135;
 
     gAddresses[2].address =     3;
     gAddresses[2].offPin =      5;
     gAddresses[2].onPin =       6;
     gAddresses[2].servoPin =    16;
-    gAddresses[2].servoOffPos = 0;
-    gAddresses[2].servoOnPos =  90;
+    gAddresses[2].servoOffPos = 45;
+    gAddresses[2].servoOnPos =  135;
 
     gAddresses[3].address =     4;
     gAddresses[3].offPin =      8;
     gAddresses[3].onPin =       9;
     gAddresses[3].servoPin =    17;
-    gAddresses[3].servoOffPos = 0;
-    gAddresses[3].servoOnPos =  90;
+    gAddresses[3].servoOffPos = 45;
+    gAddresses[3].servoOnPos =  135;
 
         // Setup outputs
     for(int i=0; i<(int)(sizeof(gAddresses)/sizeof(gAddresses[0])); i++)
