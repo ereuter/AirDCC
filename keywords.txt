@@ -6,15 +6,15 @@
 # Datatypes (KEYWORD1)
 #######################################
 
-AirDCC																	KEYWORD1
+AirDCC	KEYWORD1
 
 #######################################
 # Methods and Functions (KEYWORD2)
 #######################################
-AirDcc																	KEYWORD2
-startModem															KEYWORD2
-changeChannel 													KEYWORD2
-keepAlive															KEYWORD2
+AirDcc	KEYWORD2
+startModem	KEYWORD2
+changeChannel	KEYWORD2
+keepAlive	KEYWORD2
 
 
 #######################################
